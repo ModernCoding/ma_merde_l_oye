@@ -62,6 +62,9 @@
                 margin-bottom: 30px;
             }
         </style>
+
+        <script type="text/javascript" defer src="{{ mix('/js/app.js') }}"></script>
+
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -79,13 +82,13 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="content" data-controller="welcome">
                 <div class="title m-b-md">
                     Laravel
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laravel.com/docs" data-action="mouseover->welcome#toto">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
